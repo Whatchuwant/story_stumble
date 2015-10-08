@@ -2,6 +2,7 @@
 class User < ActiveRecord::Base
 	has_many :posts
 	has_one :profile
+	has_many :follows, foreign_key: :followee_id
 end
 
 class Post < ActiveRecord::Base
@@ -11,4 +12,10 @@ end
 
 class Profile < ActiveRecord::Base
 	belongs_to :user
+end
+
+#when we want to see 
+
+class Follow < ActiveRecord::Base
+	has_many :follows, foreign_key: :follower_id
 end

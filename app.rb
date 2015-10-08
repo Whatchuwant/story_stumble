@@ -12,10 +12,10 @@ get '/login' do
 	erb :login
 end
 
-get '/profile'
+get '/profile' do
 	erb :profile
 end
 
-get '/discover'
+get '/discover' do
 	erb :discover
 end
