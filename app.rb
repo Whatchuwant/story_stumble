@@ -19,3 +19,7 @@ end
 get '/discover' do
 	erb :discover
 end
+
+get '/settings' do
+	erb :settings
+end

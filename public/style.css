@@ -1,0 +1,116 @@
+/*----nav----*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  opacity: 0.70;
+}
+
+li {
+  font-family: 'Century Gothic', sans-serif;
+  letter-spacing: 3px;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  color: white;
+}
+/*--------pic upload--------*/
+#pic-wrapper {
+  width: 300px;
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+#pic-upload {
+  float: left;
+  width: 30%;
+  height: 30%;
+}
+#pic-upload form {
+  width: 70%;
+  height: 30%;
+}
+#pic-upload form input {
+ margin-bottom: 5px;
+}
+#pic {
+  width: 200px;
+  height: 160px;
+  margin-top: 15%;
+}
+#pic img {
+width: 150px;
+height: 150px;
+border-radius: 100px;
+}
+
+/*------settings box----------*/
+
+#settings-wrapper {
+  width: 60%;
+  height: 90%;
+  border: black 1px solid;
+  float: right;
+  margin: 5%;
+}
+
+#settings-wrapper form textarea{
+  width: 90%;
+  display: block;
+  margin-left: 3%;
+}
+#settings-wrapper form input {
+  display: block;
+  margin-bottom: 10%;
+  margin-left: 3%;
+}
+h5, h3 {
+  margin-left: 3%;
+}
+
+/*-------post history---------*/
+#post-history-wrapper {
+  width: 15%;
+  height: 70%;
+  margin-left: 5%;
+  float: left;
+  border: black 1px solid;
+}
+
+
+/*----------blog post---------*/
+
+#blog-post-wrapper {
+  float: right;
+  width: 60%;
+  height: 60%;
+  margin: 5%;
+  border: black 3px solid;
+}
+#blog-post-wrapper form textarea {
+  width: 90%;
+  height: 70%;
+}
+
+/*--- setttings button -------*/
+
+#settings-buttons {
+  width: 10%;
+  float: right;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  margin-top: 5%;
+}
+
+/*-----About Page Box---------*/
+#about-wrapper {
+  width: 65%;
+  float: right;
+  border: black 1px solid;
+}
+
