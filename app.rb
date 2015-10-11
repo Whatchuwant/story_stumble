@@ -1,12 +1,14 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require './app'
 #requests mandrill gem for email contact
 require 'mandrill'
+require 'sinatra/flash'
 #links models.rb to be used
 require './models'
 
 set(:database, 'sqlite3:jul_dan.sqlite3')
+
+enable :sessions
 
 get '/login' do
 	erb :login
@@ -23,3 +25,4 @@ end
 get '/settings' do
 	erb :settings
 end
+
