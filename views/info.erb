@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="style.css">
+<h1>Login info</h1>
+
+<% if current_user %>
+	<ul>
+		<li>Email:<% current_user.email %></li>
+		<li>Password:<% current_user.password %></li>
+	</ul>
+		<p>Continue to <a href="profile">site</a></p>
+<% else %>
+	<p>Please <a href="login">login or signup</a> to access this site</p>
+<% end %>

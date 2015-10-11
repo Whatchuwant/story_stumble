@@ -2,10 +2,10 @@
 <link rel="stylesheet" href="style.css">
 <nav>
 	<ul>
-		<li>Logout</li>
-		<li>settings</li>
-		<li>Discover</li>
-		<li>Profile</li>
+		<li><a href="/logout">Logout</a></li>
+		<li><a href="settings">Settings</a></li>
+		<li><a href="discover">Discover</a></li>
+		<li><a href="profile">Profile</a></li>
 	</ul>
 </nav>
 
@@ -29,8 +29,8 @@
 <!-- blog post -->
 <div id="blog-post-wrapper">
 <h3>Write Something!</h3>
-	<form method="POST" action="">
+	<form method="POST" action="/posts">
   		<textarea name="blog-body"></textarea>
-  		<input type="submit">
+  		<input type="submit" value="Create Post">
 	</form>
 </div>
