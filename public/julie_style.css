@@ -1,0 +1,249 @@
+/* MAIN BODY-BACKGROUND*/
+body {
+      text-align: center;
+      background:url("imgs/background-315469.jpg");
+       background-repeat: repeat-x;
+      background-position: center;
+      color: white;
+      font-family: helvetica, bold;
+    }
+
+   *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #00007A;
+  transition: 0.25s ease;
+}
+a:hover {
+  color: #00007A;
+}
+/*LOG IN/ SIGN UP FORM*/
+.form {
+  background: rgba(25, 34, 88, 0.6);
+  padding: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 4px rgba(25, 34, 88, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #00007A;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-group li a:hover {
+  background: #00007A;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #00007A;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 200;
+  margin: 0 0 40px;
+}
+
+label {
+  position: absolute;
+  transform: translateY(15px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.2);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-size: 22px;
+}
+label.req {
+  margin: 2px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+label.active {
+  transform: translateY(60px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea{
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 8%;
+  padding: 10px 10px;
+  background: none;
+  background-image: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #00007A;
+}
+
+textarea {
+  border: 2px solid #00007A;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  background: #00007A;
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+.button:hover, .button:focus {
+  background: #00007A;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+.logo {
+  width: 250px;
+  height: 150px;
+  margin: 0 auto;
+  background: url(imgs/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*Disclaimer for logo*/
+p {
+  font-size: 10px;
+}
+
+/*Discover.html- BIG BUTTON*/
+
+
+.form1 {
+  background: rgba(25, 34, 88, 0.6);
+  padding: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 80px;
+  box-shadow: 0 4px 10px 40px rgba(25, 34, 88, 0.3);
+}
+
+.bigbutton {
+  width: 350px;
+  height: 350px;
+  border-radius: 60%;
+  box-shadow: 0px 1px 1px rgba(48, 48, 48, 1);
+  background-color: rgba(233, 233, 233, 1);
+  transition: width ease-in-out .25s, height ease-in-out .25s, border-radius ease-in-out .25s;
+  position: center;
+  border: solid rgba(233, 233, 233, .6) 5px;
+}
+
+.m0 {
+  background-image: url("http://lorempixel.com/500/500/");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+.bigbutton:hover {
+  width: 350px;
+  height: 350px;
+  border-radius: 33%; 
+}
+
+.bigbutton a {
+  font-family: helvetica, bold;
+  font-size: 32px;
+  text-decoration: none;
+  width: 350px;
+  height: auto;
+  display: block;
+  padding: 350px 0px 0px 0px;
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  transition: padding ease-in-out .5s, background-color ease-in-out .75s, font-size ease-in-out .75s, border-radius ease-in-out .75s;
+  font-weight: 300;
+  letter-spacing: .5px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.bigbutton a:hover {
+  padding: 50px 0px 110px 0px;
+  width: 350px;
+  height: auto;
+  border-radius: 100%;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+
