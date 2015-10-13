@@ -6,7 +6,10 @@ require 'sinatra/flash'
 #links models.rb to be used
 require './models'
 
-set(:database, 'sqlite3:jul_dan.sqlite3')
+#for hiroku
+configure(:development){set :database, "sqlite3:blog.sqlite3"}
+
+
 
 enable :sessions
 
@@ -29,6 +32,7 @@ end
 get '/settings' do
 	erb :settings
 end
+
 
 #http POST method and '/login' action route
 post '/login' do
@@ -71,3 +75,17 @@ def current_user
     @current_user = User.find(session[:user_id])
   end
 end
+
+post '/posts' do
+	Post.create(body: params[:body])
+	# @posts = Post.where(user_id: session[:user_id])
+	erb :profile
+end
+
+get '/posts' do
+	@posts = Post.where(user_id: session[:user_id])
+	erb :posts
+end
+
+
+

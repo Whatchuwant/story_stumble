@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="style.css">
+<nav>
+  <ul>
+    <li><a href="/logout">Logout</a></li>
+    <li><a href="posts">Posts</a></li>
+    <li><a href="settings">Settings</a></li>
+    <li><a href="discover">Discover</a></li>
+    <li><a href="profile">Profile</a></li>
+  </ul>
+</nav>
+<h1>View All Blog Posts Here</h1>
+<ul>
+ <% @posts.each do |post| %>
+    <h2><strong>Id:</strong> <%= post.id %></h2>
+    <li><strong>Body:</strong> <%= post.body %></li>
+  <% end %>
+</ul>
